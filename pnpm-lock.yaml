@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@stardust-configs/browserslist-config': 0.1.0
-  '@stardust-configs/eslint-config': 0.7.0
+  '@stardust-configs/eslint-config': 0.9.0
   '@stardust-configs/prettier-config': 0.1.1
   '@stardust-configs/tsconfig': 0.3.0
   '@types/node': 18.15.3
@@ -13,7 +13,6 @@ specifiers:
   next: 13.2.4
   postcss: 8.4.21
   prettier: 2.8.4
-  prettier-plugin-tailwindcss: 0.2.4
   react: 18.2.0
   react-dom: 18.2.0
   tailwindcss: 3.2.7
@@ -26,7 +25,7 @@ dependencies:
 
 devDependencies:
   '@stardust-configs/browserslist-config': 0.1.0
-  '@stardust-configs/eslint-config': 0.7.0_cxk2izsnbljdhebs7ezdbimyva
+  '@stardust-configs/eslint-config': 0.9.0_32yxto2e2ww5pew4fg2yf3n4ru
   '@stardust-configs/prettier-config': 0.1.1_prettier@2.8.4
   '@stardust-configs/tsconfig': 0.3.0_typescript@4.9.5
   '@types/node': 18.15.3
@@ -36,7 +35,6 @@ devDependencies:
   eslint: 8.36.0
   postcss: 8.4.21
   prettier: 2.8.4
-  prettier-plugin-tailwindcss: 0.2.4_prettier@2.8.4
   tailwindcss: 3.2.7_postcss@8.4.21
   typescript: 4.9.5
 
@@ -251,8 +249,8 @@ packages:
     resolution: {integrity: sha512-aHmgvDiOXldvatf/ZiFzPnVyVk3Hdxsq/iitcaeILE3ACI7vSocSk6Rs0pHuC3TQMqAt0AKVH/eXK1j6Qfa3wg==}
     dev: true
 
-  /@stardust-configs/eslint-config/0.7.0_cxk2izsnbljdhebs7ezdbimyva:
-    resolution: {integrity: sha512-IzEV5n9EVtDs12ijLX0FxdVRImV3XvlSDElLovCveTbckVu6Auk8isGrpgdWLQYVwSStl6qocXjwktL7MpNMnA==}
+  /@stardust-configs/eslint-config/0.9.0_32yxto2e2ww5pew4fg2yf3n4ru:
+    resolution: {integrity: sha512-pkxBg5NOfHXIkEBDre4lADRoGXDv/VALbzSvaeydNYU6MrEZLDi3Pkd9VSjlBxG48KYvu7WUjyCH8wGBr4+BfA==}
     peerDependencies:
       eslint: ^8.9.0
       prettier: ^2.0.0
@@ -264,14 +262,17 @@ packages:
       eslint: 8.36.0
       eslint-config-prettier: 8.6.0_eslint@8.36.0
       eslint-plugin-import: 2.27.5_o5pge6mmpyooatf3bxza2tphjq
+      eslint-plugin-jsonc: 2.7.0_eslint@8.36.0
       eslint-plugin-react: 7.32.2_eslint@8.36.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.36.0
+      eslint-plugin-tailwindcss: 3.10.1_tailwindcss@3.2.7
       prettier: 2.8.4
       typescript: 4.9.5
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
+      - tailwindcss
     dev: true
 
   /@stardust-configs/prettier-config/0.1.1_prettier@2.8.4:
@@ -960,6 +961,18 @@ packages:
       - supports-color
     dev: true
 
+  /eslint-plugin-jsonc/2.7.0_eslint@8.36.0:
+    resolution: {integrity: sha512-DZgC71h/hZ9t5k/OGAKOMdJCleg2neZLL7No+YYi2ZMroCN4X5huZdrLf1USbrc6UTHwYujd1EDwXHg1qJ6CYw==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: '>=6.0.0'
+    dependencies:
+      '@eslint-community/eslint-utils': 4.2.0_eslint@8.36.0
+      eslint: 8.36.0
+      jsonc-eslint-parser: 2.2.0
+      natural-compare: 1.4.0
+    dev: true
+
   /eslint-plugin-react-hooks/4.6.0_eslint@8.36.0:
     resolution: {integrity: sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==}
     engines: {node: '>=10'}
@@ -991,6 +1004,17 @@ packages:
       resolve: 2.0.0-next.4
       semver: 6.3.0
       string.prototype.matchall: 4.0.8
+    dev: true
+
+  /eslint-plugin-tailwindcss/3.10.1_tailwindcss@3.2.7:
+    resolution: {integrity: sha512-NLPZ6b6nd/8CgGNMQ6NDiPUfBLQpSGu/u9RyX3MCZOwzNs2dFt1OamNAiRuo3Ixh7Gv4t5UcAcdNt8z74UDJkA==}
+    engines: {node: '>=12.13.0'}
+    peerDependencies:
+      tailwindcss: ^3.2.2
+    dependencies:
+      fast-glob: 3.2.12
+      postcss: 8.4.21
+      tailwindcss: 3.2.7_postcss@8.4.21
     dev: true
 
   /eslint-scope/5.1.1:
@@ -1543,6 +1567,16 @@ packages:
       minimist: 1.2.8
     dev: true
 
+  /jsonc-eslint-parser/2.2.0:
+    resolution: {integrity: sha512-x5QjzBOORd+T2EjErIxJnkOEbLVEdD1ILEeBbIJt8Eq/zUn7P7M8qdnWiNVBK5f8oxnJpc6SBHOeeIEl/swPjg==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dependencies:
+      acorn: 8.8.2
+      eslint-visitor-keys: 3.3.0
+      espree: 9.5.0
+      semver: 7.3.8
+    dev: true
+
   /jsx-ast-utils/3.3.3:
     resolution: {integrity: sha512-fYQHZTZ8jSfmWZ0iyzfwiU4WDX4HpHbMCZ3gPlWYiCl3BoeOTsqKBqnTVfH2rYT7eP5c3sVbeSPHnnJOaTrWiw==}
     engines: {node: '>=4.0'}
@@ -1914,61 +1948,6 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
-    dev: true
-
-  /prettier-plugin-tailwindcss/0.2.4_prettier@2.8.4:
-    resolution: {integrity: sha512-wMyugRI2yD8gqmMpZSS8kTA0gGeKozX/R+w8iWE+yiCZL09zY0SvfiHfHabNhjGhzxlQ2S2VuTxPE3T72vppCQ==}
-    engines: {node: '>=12.17.0'}
-    peerDependencies:
-      '@ianvs/prettier-plugin-sort-imports': '*'
-      '@prettier/plugin-php': '*'
-      '@prettier/plugin-pug': '*'
-      '@shopify/prettier-plugin-liquid': '*'
-      '@shufo/prettier-plugin-blade': '*'
-      '@trivago/prettier-plugin-sort-imports': '*'
-      prettier: '>=2.2.0'
-      prettier-plugin-astro: '*'
-      prettier-plugin-css-order: '*'
-      prettier-plugin-import-sort: '*'
-      prettier-plugin-jsdoc: '*'
-      prettier-plugin-organize-attributes: '*'
-      prettier-plugin-organize-imports: '*'
-      prettier-plugin-style-order: '*'
-      prettier-plugin-svelte: '*'
-      prettier-plugin-twig-melody: '*'
-    peerDependenciesMeta:
-      '@ianvs/prettier-plugin-sort-imports':
-        optional: true
-      '@prettier/plugin-php':
-        optional: true
-      '@prettier/plugin-pug':
-        optional: true
-      '@shopify/prettier-plugin-liquid':
-        optional: true
-      '@shufo/prettier-plugin-blade':
-        optional: true
-      '@trivago/prettier-plugin-sort-imports':
-        optional: true
-      prettier-plugin-astro:
-        optional: true
-      prettier-plugin-css-order:
-        optional: true
-      prettier-plugin-import-sort:
-        optional: true
-      prettier-plugin-jsdoc:
-        optional: true
-      prettier-plugin-organize-attributes:
-        optional: true
-      prettier-plugin-organize-imports:
-        optional: true
-      prettier-plugin-style-order:
-        optional: true
-      prettier-plugin-svelte:
-        optional: true
-      prettier-plugin-twig-melody:
-        optional: true
-    dependencies:
-      prettier: 2.8.4
     dev: true
 
   /prettier/2.8.4:
