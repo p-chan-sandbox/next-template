@@ -4,7 +4,7 @@ specifiers:
   '@stardust-configs/browserslist-config': 0.1.0
   '@stardust-configs/eslint-config': 0.9.0
   '@stardust-configs/prettier-config': 0.1.1
-  '@stardust-configs/tsconfig': 0.3.0
+  '@stardust-configs/tsconfig': 0.4.0
   '@types/node': 18.15.3
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
@@ -27,7 +27,7 @@ devDependencies:
   '@stardust-configs/browserslist-config': 0.1.0
   '@stardust-configs/eslint-config': 0.9.0_32yxto2e2ww5pew4fg2yf3n4ru
   '@stardust-configs/prettier-config': 0.1.1_prettier@2.8.4
-  '@stardust-configs/tsconfig': 0.3.0_typescript@4.9.5
+  '@stardust-configs/tsconfig': 0.4.0_typescript@4.9.5
   '@types/node': 18.15.3
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
@@ -283,8 +283,8 @@ packages:
       prettier: 2.8.4
     dev: true
 
-  /@stardust-configs/tsconfig/0.3.0_typescript@4.9.5:
-    resolution: {integrity: sha512-F7ZiYWZxiXbSIq3qPAKUkEyoAkQXkVoUROLwKZojWMTOplimKiumhNfXDCpg4dP2w2mOCYm8sAFPj43Q1CGc2g==}
+  /@stardust-configs/tsconfig/0.4.0_typescript@4.9.5:
+    resolution: {integrity: sha512-yF8GUmcxATNIimDOwggtHlPqAQBsHCZgDIjquMkWPYemW1K3PEiwpMX1WMHhIAi+gXr2Fj05aP3AlO/q+yovRQ==}
     peerDependencies:
       typescript: '*'
     dependencies:
