@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@stardust-configs/browserslist-config": "0.1.0",
-    "@stardust-configs/eslint-config": "0.9.0",
+    "@stardust-configs/eslint-config": "0.12.0",
     "@stardust-configs/prettier-config": "0.3.0",
     "@stardust-configs/tsconfig": "0.4.0",
     "@types/node": "18.16.19",
