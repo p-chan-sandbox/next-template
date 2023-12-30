@@ -21,10 +21,10 @@ devDependencies:
     version: 0.1.0
   '@stardust-configs/eslint-config':
     specifier: 0.9.0
-    version: 0.9.0(eslint@8.45.0)(prettier@2.8.8)(tailwindcss@3.3.3)(typescript@5.1.6)
+    version: 0.9.0(eslint@8.45.0)(prettier@3.1.1)(tailwindcss@3.3.3)(typescript@5.1.6)
   '@stardust-configs/prettier-config':
     specifier: 0.1.1
-    version: 0.1.1(prettier@2.8.8)
+    version: 0.1.1(prettier@3.1.1)
   '@stardust-configs/tsconfig':
     specifier: 0.4.0
     version: 0.4.0(typescript@5.1.6)
@@ -47,8 +47,8 @@ devDependencies:
     specifier: 8.4.26
     version: 8.4.26
   prettier:
-    specifier: 2.8.8
-    version: 2.8.8
+    specifier: 3.1.1
+    version: 3.1.1
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
@@ -275,7 +275,7 @@ packages:
     resolution: {integrity: sha512-aHmgvDiOXldvatf/ZiFzPnVyVk3Hdxsq/iitcaeILE3ACI7vSocSk6Rs0pHuC3TQMqAt0AKVH/eXK1j6Qfa3wg==}
     dev: true
 
-  /@stardust-configs/eslint-config@0.9.0(eslint@8.45.0)(prettier@2.8.8)(tailwindcss@3.3.3)(typescript@5.1.6):
+  /@stardust-configs/eslint-config@0.9.0(eslint@8.45.0)(prettier@3.1.1)(tailwindcss@3.3.3)(typescript@5.1.6):
     resolution: {integrity: sha512-pkxBg5NOfHXIkEBDre4lADRoGXDv/VALbzSvaeydNYU6MrEZLDi3Pkd9VSjlBxG48KYvu7WUjyCH8wGBr4+BfA==}
     peerDependencies:
       eslint: ^8.9.0
@@ -292,7 +292,7 @@ packages:
       eslint-plugin-react: 7.32.2(eslint@8.45.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.45.0)
       eslint-plugin-tailwindcss: 3.10.1(tailwindcss@3.3.3)
-      prettier: 2.8.8
+      prettier: 3.1.1
       typescript: 5.1.6
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
@@ -301,12 +301,12 @@ packages:
       - tailwindcss
     dev: true
 
-  /@stardust-configs/prettier-config@0.1.1(prettier@2.8.8):
+  /@stardust-configs/prettier-config@0.1.1(prettier@3.1.1):
     resolution: {integrity: sha512-KVNeDikcETcc9IuK69kk66O01I/8TdtzY6T4RTcjoqPJtD1NLe/cQkWTTAY6vqXZ8blOwexkOLFv11pXrZTjRA==}
     peerDependencies:
       prettier: ^2.0.0
     dependencies:
-      prettier: 2.8.8
+      prettier: 3.1.1
     dev: true
 
   /@stardust-configs/tsconfig@0.4.0(typescript@5.1.6):
@@ -2021,9 +2021,9 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier@2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
-    engines: {node: '>=10.13.0'}
+  /prettier@3.1.1:
+    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
