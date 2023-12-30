@@ -23,8 +23,8 @@ devDependencies:
     specifier: 0.9.0
     version: 0.9.0(eslint@8.45.0)(prettier@3.1.1)(tailwindcss@3.3.3)(typescript@5.1.6)
   '@stardust-configs/prettier-config':
-    specifier: 0.1.1
-    version: 0.1.1(prettier@3.1.1)
+    specifier: 0.3.0
+    version: 0.3.0(prettier@3.1.1)
   '@stardust-configs/tsconfig':
     specifier: 0.4.0
     version: 0.4.0(typescript@5.1.6)
@@ -301,10 +301,10 @@ packages:
       - tailwindcss
     dev: true
 
-  /@stardust-configs/prettier-config@0.1.1(prettier@3.1.1):
-    resolution: {integrity: sha512-KVNeDikcETcc9IuK69kk66O01I/8TdtzY6T4RTcjoqPJtD1NLe/cQkWTTAY6vqXZ8blOwexkOLFv11pXrZTjRA==}
+  /@stardust-configs/prettier-config@0.3.0(prettier@3.1.1):
+    resolution: {integrity: sha512-pixGCsdTBO4MGkwNL6YNNSypP4dXmeog6bvhS2vXDfNArJR84pLWAhAJFApkEfWf/Gaok0xN2lPRGeF297VBng==}
     peerDependencies:
-      prettier: ^2.0.0
+      prettier: ^3.0.0
     dependencies:
       prettier: 3.1.1
     dev: true
